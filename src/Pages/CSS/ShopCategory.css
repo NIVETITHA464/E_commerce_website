@@ -1,0 +1,59 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto; /* Centers the banner */
+    width: 90%; /* Adjusts the width to better align with other content */
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 20px auto; /* Centers the "Showing 1-12" text and sort options */
+    padding: 0 5%; /* Adds padding to align with the banner and products */
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Matches the width of the banner */
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 20px auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90%; /* Matches the width of the banner */
+}
+
+.shopcategory-products img {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.shopcategory-products .item {
+    padding: 10px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.shopcategory-products .item .price {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.shopcategory-products .item:hover {
+    transform: scale(1.05);
+}
